@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <audio id="move">
+        <source src="move_sound.mp3" type="audio/mpeg">
+      </audio>
+
+    <div class="gridChess">
+        
+        <img src="chessGraphics/black_rook.png" alt="" id="a8" onmousedown="onDown(id)"height="100" width="100" draggable="false" onmouseup="onUp(id)" >
+        <img src="chessGraphics/black_knight.png" alt="" id="b8" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/black_bishop.png" alt="" id="c8" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/black_queen.png" alt="" id="d8" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/black_king.png" alt="" id="e8" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/black_bishop.png" alt="" id="f8" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/black_knight.png" alt="" id="g8" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/black_rook.png" alt="" id="h8" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/black_pawn.png" alt="" id="a7" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/black_pawn.png" alt="" id="b7" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/black_pawn.png" alt="" id="c7" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/black_pawn.png" alt="" id="d7" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/black_pawn.png" alt="" id="e7" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/black_pawn.png" alt="" id="f7" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/black_pawn.png" alt="" id="g7" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/black_pawn.png" alt="" id="h7" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="a6" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="b6" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="c6" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="d6" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="e6" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="f6" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="g6" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="h6" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="a5" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="b5" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="c5" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="d5" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="e5" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="f5" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="g5" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="h5" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="a4" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="b4" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="c4" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="d4" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="e4" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="f4" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="g4" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="h4" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="a3" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="b3" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="c3" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="d3" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="e3" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="f3" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="g3" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/empty.png" alt="" id="h3" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/white_pawn.png" alt="" id="a2" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/white_pawn.png" alt="" id="b2" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/white_pawn.png" alt="" id="c2" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/white_pawn.png" alt="" id="d2" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/white_pawn.png" alt="" id="e2" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/white_pawn.png" alt="" id="f2" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/white_pawn.png" alt="" id="g2" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/white_pawn.png" alt="" id="h2" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/white_rook.png" alt="" id="a1" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/white_knight.png" alt="" id="b1" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/white_bishop.png" alt="" id="c1" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/white_queen.png" alt="" id="d1" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/white_king.png" alt="" id="e1" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/white_bishop.png" alt="" id="f1" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/white_knight.png" alt="" id="g1" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+        <img src="chessGraphics/white_rook.png" alt="" id="h1" onmousedown="onDown(id)" height="100" width="100" draggable="false" onmouseup="onUp(id)">
+    </div>
+
+    <br>
+    <hr>
+    
+    <div class="center"><button onclick="location.href='../index.html'" id="nextButton">Main Page</button></div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

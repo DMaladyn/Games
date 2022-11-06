@@ -1,0 +1,17 @@
+.gridChess {
+    background-size: 800px 800px;
+    background-image: url(chessGraphics/chessboard.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px ;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px ;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+body {
+    text-align: center;
+}
+

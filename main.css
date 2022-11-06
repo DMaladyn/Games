@@ -1,0 +1,46 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url(bg_texture.png);
+    background-repeat:repeat;
+}
+
+.center {
+    text-align: center;
+}
+
+.title {
+    border-radius: 30px;
+    background: #73AD21;
+    padding: 8px;
+    
+}
+
+.gamesDisplay {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+text-align: center;
+}
+
+.gameWindow {
+display: grid;
+grid-template-rows: auto auto;
+grid-template-columns: auto;
+
+}
+
+@media (max-width: 1200px ) {
+    .gamesDisplay {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        text-align: center;
+        }
+}
+
+@media (max-width: 600px ) {
+    .gamesDisplay {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        text-align: center;
+        }
+}
